@@ -1,0 +1,15 @@
+{
+  "name": "nextts-mf",
+  "version": "1.0.0",
+  "description": "Next.js + TypeScript + Module Federation",
+  "repository": "https://github.com/gmartenscb/nextts-mf",
+  "author": "gmartenscb",
+  "license": "UNLICENSED",
+  "scripts": {
+    "setup": "concurrently 'yarn --cwd host' 'yarn --cwd remote'",
+    "start": "concurrently 'yarn --cwd host dev' 'yarn --cwd remote dev'"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
